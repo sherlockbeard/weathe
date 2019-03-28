@@ -12,6 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.disis.weather.MOdel.Model;
 
 public class detailed_activity extends AppCompatActivity {
     Model mod;

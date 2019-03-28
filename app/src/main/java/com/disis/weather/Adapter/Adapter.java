@@ -1,4 +1,4 @@
-package com.disis.weather;
+package com.disis.weather.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.disis.weather.MOdel.Model;
+import com.disis.weather.R;
+import com.disis.weather.detailed_activity;
 
 import java.util.List;
 
@@ -44,7 +47,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getContext(),model.getWoeid(),Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getContext(),detailed_activity.class);
+                Intent intent = new Intent(getContext(), detailed_activity.class);
                 intent.putExtra("woeid",model.getWoeid());
                 getContext().startActivity(intent);
             }

@@ -1,4 +1,4 @@
-package com.disis.weather;
+package com.disis.weather.MOdel;
 
 public class Model {
 
